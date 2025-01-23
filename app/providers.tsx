@@ -145,7 +145,7 @@ const Providers = ({ children }: { children: React.ReactNode }) => {
           }}
         >
           {loading && <div>로딩 중...</div>}
-          <Header display={"block"} />
+          <Header />
           {children}
           {/* {isFirstVisit && <OnBoarding />}
           {isSplashVisible && <Splash />} */}
