@@ -1,35 +1,15 @@
-import styled from "@emotion/styled";
+import Logo from "@/components/asset/Logo";
+import styled from "./Header.module.css";
 
-type HeaderProps = {
-  display: "none" | "block";
-};
-
-const Header = ({ display }: HeaderProps) => {
+const Header = () => {
   return (
-    <Container
-      style={{
-        display,
-      }}
-    >
-      {/* <Logo /> */}
-    </Container>
+    <header className={styled.container}>
+      <div className={styled.wrapper}>
+        <Logo />
+        <button className={styled.download}>앱 다운로드</button>
+      </div>
+    </header>
   );
 };
 
 export default Header;
-
-const Container = styled.div`
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  overflow: hidden;
-  padding: 20px 16px;
-  height: 57px;
-  background-color: white;
-  z-index: 100;
-`;
