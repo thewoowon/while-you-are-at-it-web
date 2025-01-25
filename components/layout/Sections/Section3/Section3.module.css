@@ -1,9 +1,138 @@
 .container {
-    width: 100%;
-    height: 1080px;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
+  width: 100%;
+  height: 1905px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  z-index: 1;
+  padding-top: 125px;
+}
+
+.commonShadow {
+  box-shadow: 5px 4.8px 24.4px 0 rgba(0, 0, 0, 0.07);
+  border-radius: 14.4px;
+}
+
+.labelText {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 48px;
+  text-align: center;
+  color: #1cd7ae;
+  letter-spacing: -0.015;
+}
+
+.titleText {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 71px;
+  text-align: left;
+  color: #1b1b1b;
+  letter-spacing: -0.015;
+}
+
+.descriptionText {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 35px;
+  text-align: left;
+  color: #394245;
+  letter-spacing: -0.015;
+  position: absolute;
+  left: 39px;
+  width: 294px;
+}
+
+.labelStyle {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 13px;
+}
+
+.particle1 {
+  box-shadow: 5px 4.8px 24.4px 0 rgba(0, 0, 0, 0.07);
+  border-radius: 12px;
+  margin-top: 135px;
+}
+.particle2 {
+  box-shadow: 10px 7.46px 41.53px 0 rgba(0, 0, 0, 0.09);
+  border-radius: 40px;
+  margin-top: 70px;
+}
+.particle3 {
+  box-shadow: 16px 1.8px 41.4px 0 rgba(0, 0, 0, 0.09);
+  border-radius: 33.3px;
+}
+.particle4 {
+  box-shadow: 16px 1.8px 41.4px 0 rgba(0, 0, 0, 0.09);
+  border-radius: 33.3px;
+  position: absolute;
+  top: 432px;
+}
+
+.particle5 {
+  box-shadow: 16px 1.8px 41.4px 0 rgba(0, 0, 0, 0.09);
+  border-radius: 33.3px;
+  position: absolute;
+  top: 492px;
+}
+
+.flexBox {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.flexBoxColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexBoxBetween {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.particleBox {
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  gap: 39px;
+  top: 364px;
+}
+
+.greenMarker {
+  position: absolute;
+  top: 0;
+  left: 83px;
+  z-index: 1;
+}
+
+.whiteMarker {
+  position: absolute;
+  top: 30px;
+  left: -55px;
+  z-index: 1;
+}

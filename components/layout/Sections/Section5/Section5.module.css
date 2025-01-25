@@ -1,8 +1,92 @@
 .container {
   width: 100%;
-  height: 1080px;
+  height: 1242px;
   background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 23px;
+  z-index: 1;
+  padding-top: 130px;
+}
+
+.labelText {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 48px;
+  text-align: center;
+  color: #1cd7ae;
+  letter-spacing: -0.015;
+}
+
+.titleText {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 71px;
+  text-align: left;
+  color: #1b1b1b;
+  letter-spacing: -0.015;
+}
+
+.descriptionText {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 35px;
+  text-align: left;
+  color: #394245;
+  letter-spacing: -0.015;
+  width: 360px;
+}
+
+.labelStyle {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 13px;
+}
+
+.particle1 {
+  box-shadow: 0px 2.16px 49.68px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 36px;
+}
+
+.particle2 {
+  box-shadow: 0px 1.46px 33.53px 0 rgba(0, 0, 0, 0.14);
+  border-radius: 47.43px;
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 63px;
+}
+
+.circle {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background-color: #d2f7ef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
 }

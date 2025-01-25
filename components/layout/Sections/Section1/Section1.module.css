@@ -3,7 +3,27 @@
   height: 1144px;
   padding-top: 64px;
   /* linear-gradient */
-  background: linear-gradient(180deg, #49dfbe 0%, #ffffff 100%);
+  background: linear-gradient(180deg, #ffffff 4%, #49dfbe 100%);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 23px;
+}
+
+.wrapper {
+  padding-top: 87px;
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 23px;
+  z-index: 1;
 }
 
 .title {
@@ -14,21 +34,73 @@
   text-align: center;
   color: #1b1b1b;
   letter-spacing: -0.015;
+  animation: identifier 1s ease-in-out 1s 1 forwards;
+  opacity: 0;
 }
 
-.download {
-  display: flex;
-  justify-content: center;
-  margin-top: 32px;
-  border-radius: 100px;
-  width: 186px;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 28px;
-  text-align: center;
-  color: #002920;
-  letter-spacing: -0.015;
-  background-color: white;
-  box-shadow: 0px 3px 23px rgba(0, 0, 0, 0.12);
-  padding: 8px 31px;
+.chunk {
+  position: relative;
+  opacity: 0;
+  animation: chunkAnimation 0.6s ease-in-out 1s 1 forwards;
+}
+
+.particle1 {
+  position: absolute;
+  bottom: 127px;
+}
+.particle2 {
+  position: absolute;
+  top: 128px;
+  left: 25%;
+}
+.particle3 {
+  position: absolute;
+  left: 8%;
+}
+.particle4 {
+  position: absolute;
+  right: 8%;
+}
+
+.appStore {
+  cursor: pointer;
+  opacity: 0;
+  animation: particleAnimation 0.6s ease-in-out 1.5s 1 forwards;
+}
+
+.playStore {
+  cursor: pointer;
+  opacity: 0;
+  animation: particleAnimation 0.6s ease-in-out 1.5s 1 forwards;
+}
+
+@keyframes identifier {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes chunkAnimation {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes particleAnimation {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
