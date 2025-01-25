@@ -7,6 +7,7 @@ import * as gtag from "@/lib/gtag";
 import useLoading from "@/hooks/useLoading";
 import Bounce from "@/components/element/bounce";
 import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
 
 const Providers = ({ children }: { children: React.ReactNode }) => {
   const loading = useLoading();
@@ -136,7 +137,6 @@ const Providers = ({ children }: { children: React.ReactNode }) => {
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
-            height: "calc(var(--vh, 1vh) * 100)", // height를 계산된 뷰포트 높이로 설정
             position: "relative",
             width: "100%",
             margin: "0 auto",
@@ -147,6 +147,7 @@ const Providers = ({ children }: { children: React.ReactNode }) => {
           {loading && <div>로딩 중...</div>}
           <Header />
           {children}
+          <Footer />
           {/* {isFirstVisit && <OnBoarding />}
           {isSplashVisible && <Splash />} */}
         </div>
