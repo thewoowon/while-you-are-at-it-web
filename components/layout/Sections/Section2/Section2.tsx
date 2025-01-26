@@ -5,8 +5,8 @@ import styles from "./Section2.module.css";
 const Section2 = () => {
   return (
     <section className={styles.container}>
-      <ActionComp1 inheritClass={styles.paragraph} />
-      <ActionComp2 inheritClass={styles.paragraph} />
+      <ActionComp1 inheritClass={styles.paragraph1} />
+      <ActionComp2 inheritClass={styles.paragraph2} />
     </section>
   );
 };

@@ -1,8 +1,14 @@
-const WhiteMarker = () => {
+const WhiteMarker = ({
+  width = 199,
+  height = 198,
+}: {
+  width?: number;
+  height?: number | string;
+}) => {
   return (
     <svg
-      width="199"
-      height="198"
+      width={width}
+      height={height}
       viewBox="0 0 199 198"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

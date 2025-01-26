@@ -104,3 +104,19 @@
     opacity: 1;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .chunk svg {
+    height: 448px;
+  }
+  .particle3 {
+    display: none;
+  }
+  .particle4 {
+    display: none;
+  }
+}

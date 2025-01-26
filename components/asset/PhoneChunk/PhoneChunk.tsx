@@ -1,7 +1,7 @@
 const PhoneChunk = () => {
   return (
     <svg
-      width="858"
+      width="100%"
       height="648"
       viewBox="0 0 858 648"
       fill="none"

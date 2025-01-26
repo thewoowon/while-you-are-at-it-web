@@ -69,12 +69,18 @@
 .particle1 {
   box-shadow: 5px 4.8px 24.4px 0 rgba(0, 0, 0, 0.07);
   border-radius: 12px;
-  margin-top: 135px;
+  margin-top: 300px;
+  width: 351px;
+  height: 200px;
+  position: relative;
 }
 .particle2 {
   box-shadow: 10px 7.46px 41.53px 0 rgba(0, 0, 0, 0.09);
   border-radius: 40px;
   margin-top: 70px;
+  width: 376px;
+  height: 679px;
+  position: relative;
 }
 .particle3 {
   box-shadow: 16px 1.8px 41.4px 0 rgba(0, 0, 0, 0.09);
@@ -120,7 +126,7 @@
   display: flex;
   justify-content: flex-start;
   gap: 39px;
-  top: 364px;
+  top: 549px;
 }
 
 .greenMarker {
@@ -130,9 +136,105 @@
   z-index: 1;
 }
 
+.greenMarkerSmall {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
 .whiteMarker {
   position: absolute;
   top: 30px;
   left: -55px;
   z-index: 1;
+}
+
+.whiteMarkerSmall {
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  z-index: 1;
+}
+
+.commonParticle {
+  box-shadow: 16px 1.8px 41.4px 0 rgba(0, 0, 0, 0.09);
+  border-radius: 33.3px;
+}
+.parent {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr; /* 왼쪽, 가운데, 오른쪽 */
+  align-items: center; /* 세로 중앙 정렬 */
+}
+
+.child:nth-child(2) {
+  justify-self: center; /* 가운데 child를 중앙으로 배치 */
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    height: 2400px;
+  }
+  .wrapper {
+    padding: 0 20px 0 20px;
+  }
+  .flexBoxBetween {
+    flex-direction: column;
+  }
+  .flexBox {
+    width: 100%;
+  }
+  .particleBox {
+    position: relative;
+    top: auto;
+  }
+  .descriptionText {
+    font-size: 20px;
+    line-height: 32px;
+    position: relative;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    height: 1280px;
+  }
+  .wrapper {
+    padding: 26px 16px 0 16px;
+  }
+  .flexBoxBetween {
+    flex-direction: column;
+    padding-bottom: 24px;
+  }
+  .labelText {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .titleText {
+    font-size: 20px;
+    line-height: 31px;
+  }
+  .labelStyle {
+    gap: 6px;
+  }
+  .particle1 {
+    width: 134px;
+    height: 105px;
+    margin-top: 63px;
+  }
+  .particle2 {
+    width: 159px;
+    height: 293px;
+    margin-top: 20px;
+  }
+  .commonParticle {
+    border-radius: 16px;
+  }
+}
+
+@media screen and (max-width: 668px) {
+  .container {
+    height: 1140px;
+  }
 }

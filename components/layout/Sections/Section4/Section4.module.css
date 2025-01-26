@@ -93,3 +93,62 @@
   gap: 39px;
   top: 585px;
 }
+
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    padding: 144px 20px 0 20px;
+    gap: 48px;
+  }
+  .flexBox {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .labelStyle {
+    width: 100%;
+  }
+  .particleBox {
+    position: relative;
+    top: auto;
+  }
+  .descriptionText {
+    font-size: 20px;
+    line-height: 32px;
+    position: relative;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    height: 1200px;
+  }
+  .wrapper {
+    padding: 53px 16px 0 16px;
+  }
+  .labelText {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .titleText {
+    font-size: 20px;
+    line-height: 31px;
+  }
+  .labelStyle {
+    gap: 6px;
+  }
+  .commonParticle {
+    border-radius: 16px;
+  }
+}
+
+@media screen and (max-width: 668px) {
+  .container {
+    height: 1100px;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .container {
+    height: 1000px;
+  }
+}

@@ -43,3 +43,10 @@
   line-height: 25px;
   letter-spacing: -0.015;
 }
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

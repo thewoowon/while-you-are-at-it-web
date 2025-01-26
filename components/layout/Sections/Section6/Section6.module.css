@@ -45,3 +45,10 @@
   object-position: center;
   opacity: 0.6;
 }
+
+@media screen and (max-width: 768px) {
+  .paragraph {
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
