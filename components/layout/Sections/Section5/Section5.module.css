@@ -102,6 +102,7 @@
 
 @media screen and (max-width: 1200px) {
   .descriptionText {
+    width: 100%;
     font-size: 20px;
     line-height: 32px;
     position: relative;
@@ -116,7 +117,7 @@
   .wrapper {
     flex-direction: column;
     padding: 44px 16px 0 16px;
-    justify-content: center;
+    justify-content: flex-start;
   }
   .flexColumn {
     gap: 20px;
@@ -133,9 +134,13 @@
     gap: 6px;
   }
   .particle1 {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
     margin: auto;
   }
   .particle2 {
+    width: 100%;
     margin: auto;
   }
 }

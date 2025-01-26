@@ -2,6 +2,7 @@ import OrderIcons from "@/components/asset/OrderIcons";
 import styles from "./Section4.module.css";
 import CircleBig from "@/components/asset/CircleBig";
 import ActionComp1 from "./ActionComp1";
+import ActionComp2 from "./ActionComp2";
 
 const Section4 = () => {
   return (
@@ -16,9 +17,7 @@ const Section4 = () => {
               모두 가는김에에서 주문하세요
             </p>
           </div>
-          <div className="flex items-end h-full">
-            <OrderIcons />
-          </div>
+          <ActionComp2 inheritClass={styles} />
         </div>
         <div className="absolute top-0 left-[40%]">
           <CircleBig />
