@@ -3,13 +3,7 @@
 import OrderIcons from "@/components/asset/OrderIcons";
 import { useState } from "react";
 
-const ActionComp2 = ({
-  inheritClass,
-}: {
-  inheritClass: {
-    [key: string]: string;
-  };
-}) => {
+const ActionComp2 = () => {
   const [width, setWidth] = useState<number>(0);
 
   // 현재 스크린 너비 확인

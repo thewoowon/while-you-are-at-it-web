@@ -1,4 +1,3 @@
-import OrderIcons from "@/components/asset/OrderIcons";
 import styles from "./Section4.module.css";
 import CircleBig from "@/components/asset/CircleBig";
 import ActionComp1 from "./ActionComp1";
@@ -17,7 +16,7 @@ const Section4 = () => {
               모두 가는김에에서 주문하세요
             </p>
           </div>
-          <ActionComp2 inheritClass={styles} />
+          <ActionComp2 />
         </div>
         <div className="absolute top-0 left-[40%]">
           <CircleBig />
