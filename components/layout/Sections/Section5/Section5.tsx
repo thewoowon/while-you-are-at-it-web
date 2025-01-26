@@ -1,4 +1,3 @@
-import Marker from "@/components/asset/Marker";
 import styles from "./Section5.module.css";
 import Image from "next/image";
 import ActionComp1 from "./ActionComp1";
