@@ -36,3 +36,58 @@
   letter-spacing: -0.02;
   cursor: pointer;
 }
+
+.flexBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.flexBoxWide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+}
+
+.link {
+  color: #1b1b1b;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: -0.02;
+  cursor: pointer;
+}
+
+.logoBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    padding: 0 10px;
+  }
+
+  .flexBox {
+    gap: 16px;
+  }
+
+  .flexBoxWide {
+    gap: 24px;
+  }
+
+  .download {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  .link {
+    font-size: 14px;
+  }
+}

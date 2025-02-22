@@ -44,6 +44,34 @@
   letter-spacing: -0.015;
 }
 
+.link {
+  color: #d8dcdf;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: -0.015;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #f9f9f9;
+  text-decoration: underline;
+}
+
+.linkBox {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #d8dcdf;
+}
+
 @media screen and (max-width: 768px) {
   .wrapper {
     padding-left: 20px;

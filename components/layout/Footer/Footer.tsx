@@ -1,5 +1,6 @@
 import LogoB from "@/components/asset/LogoB";
 import styles from "./Footer.module.css";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -13,6 +14,15 @@ const Footer = () => {
             <p className={styles.paragraph}>대표자 김준서</p>
             <p className={styles.paragraph}> lululala@gmail.com</p>
           </div>
+        </div>
+        <div className={styles.linkBox}>
+          <Link href={"/docs"} className={styles.link}>
+            이용약관
+          </Link>
+          <span className={styles.divider}>|</span>
+          <Link href={"/privacy"} className={styles.link}>
+            개인정보처리방침
+          </Link>
         </div>
       </div>
     </footer>
