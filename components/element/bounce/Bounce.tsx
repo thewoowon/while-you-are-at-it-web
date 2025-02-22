@@ -1,11 +1,11 @@
-import styles from './Bounce.module.css';
+import styles from "./Bounce.module.css";
 
 type BounceProps = {
   width?: number;
   height?: number;
 };
 
-const Bounce = ({ width = 24, height = 24 }: BounceProps) => {
+const Bounce = ({ width = 48, height = 48 }: BounceProps) => {
   return (
     <div
       className={styles.spinner}
