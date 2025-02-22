@@ -14,5 +14,5 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")], // ✅ typography 플러그인 추가
 } satisfies Config;
