@@ -31,7 +31,7 @@ const Section1 = () => {
         </p>
         <div className="flex gap-[20px]">
           <Link
-            href="https://apps.apple.com/kr/app/%EC%9B%90%ED%95%98%EB%8A%94%EA%B9%80%EC%97%90/id158"
+            href="https://apps.apple.com/kr/app/%EA%B0%80%EB%8A%94%EA%B9%80%EC%97%90/id6742342931"
             target="_blank"
             className={styles.appStore}
           >
